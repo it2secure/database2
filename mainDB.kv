@@ -1,0 +1,22 @@
+<Database>:
+    BoxLayout:
+        orientation: 'vertical'
+        Button:
+            size_hint: 1,.2
+            text: "Connect to Databse"
+            on_release: root.on_release()
+        GridLayout:
+            cols: 2
+            Button:
+                text: "Add picture"
+                on_release: root.on_picture_insert()
+            Button:
+                id: display_picture
+                text: "Show Picture and display names"
+                on_release: root.on_show_picture()
+            Label:
+                id: label_picture
+                text: "Picture Name"
+            Image:
+                id: image
+                source: "team.jpg"
